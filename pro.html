@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+    <p class="author">GHUTUKADE VAIBHAV PRAKASH</p>
+
+    <form>
+        <!-- User Details -->
+        <fieldset>
+            <legend>User Details</legend>
+
+            <label>Full Name <span>*</span></label>
+            <input type="text" placeholder="Enter full name" required>
+
+            <label>Username <span>*</span></label>
+            <input type="text" placeholder="Enter username" required>
+
+            <label>Email <span>*</span></label>
+            <input type="email" placeholder="example@mail.com" required>
+        </fieldset>
+
+        <!-- Security -->
+        <fieldset>
+            <legend>Security</legend>
+
+            <label>Password <span>*</span></label>
+            <input type="password" placeholder="Enter password" required>
+
+            <label>Confirm Password <span>*</span></label>
+            <input type="password" placeholder="Re-enter password" required>
+        </fieldset>
+
+        <!-- Preferences -->
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <label>Gender</label>
+            <div class="options">
+                <label><input type="radio" name="gender"> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
+            </div>
+
+            <label>Interests</label>
+            <div class="options">
+                <label><input type="checkbox"> Technology</label>
+                <label><input type="checkbox"> Sports</label>
+                <label><input type="checkbox"> Music</label>
+            </div>
+
+            <label>Country</label>
+            <select>
+                <option>Select Country</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Other</option>
+            </select>
+        </fieldset>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button type="submit">Register</button>
+            <button type="reset" class="reset">Reset</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
