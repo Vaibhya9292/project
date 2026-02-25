@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Mobile responsive scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Accessible Responsive Contact Form</title>
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-wrapper">
+
+    <!-- 
+        UI Demonstration Only
+        No backend
+        No POST method
+        Submission is non-functional
+    -->
+    <form class="contact-form">
+
+        <h2>Contact Us</h2>
+
+        <!-- Name -->
+        <div class="form-group">
+            <label for="name">
+                Name <span class="required" aria-hidden="true">*</span>
+            </label>
+            <input 
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                required
+                aria-required="true">
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">
+                Email <span class="required" aria-hidden="true">*</span>
+            </label>
+            <input 
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@email.com"
+                required
+                aria-required="true">
+        </div>
+
+        <!-- Subject -->
+        <div class="form-group">
+            <label for="subject">
+                Subject <span class="required" aria-hidden="true">*</span>
+            </label>
+            <select 
+                id="subject"
+                name="subject"
+                required
+                aria-required="true">
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Support</option>
+                <option value="feedback">Feedback</option>
+            </select>
+        </div>
+
+        <!-- Message -->
+        <div class="form-group">
+            <label for="message">
+                Message <span class="required" aria-hidden="true">*</span>
+            </label>
+            <textarea 
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Type your message here..."
+                required
+                aria-required="true"></textarea>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
